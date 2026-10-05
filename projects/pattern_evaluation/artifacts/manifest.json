@@ -1,0 +1,68 @@
+{
+  "seed": 20261005,
+  "group_indices": {
+    "train": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "model_validation": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "weight_validation": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "test": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "group_split_disjoint": true,
+  "train_episodes": 120,
+  "validation_episodes": 24,
+  "tuning_episodes": 6,
+  "holdout_episodes": 144,
+  "closed_loop_runs": 864,
+  "train_states": 557,
+  "validation_states": 111,
+  "test_states": 52,
+  "train_candidate_targets": 7757,
+  "validation_candidate_targets": 1247,
+  "teacher_all_generated_valid_candidates": true,
+  "current_candidate_cap": null,
+  "feature_count": 115,
+  "future_draws": 6,
+  "future_depth": 6,
+  "checkpoint_reused": true
+}

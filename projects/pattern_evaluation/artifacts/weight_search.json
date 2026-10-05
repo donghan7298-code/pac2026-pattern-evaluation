@@ -1,0 +1,956 @@
+{
+  "selection": "validation completed-episode objective; test never used",
+  "records": [
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.22,
+        "future_fit": 0.4,
+        "future_volume": 0.15,
+        "risk": 0.12,
+        "balance": 0.06,
+        "handling": 0.05
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 179.76435463637327,
+        "p95_decision_ms": 393.48157994977555,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 90.28976216931217
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.12,
+        "future_fit": 0.6,
+        "future_volume": 0.15,
+        "risk": 0.07,
+        "balance": 0.03,
+        "handling": 0.03
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4399285965994185,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 208.68118617047767,
+        "p95_decision_ms": 708.7580777500306,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 89.70602420634923
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.25,
+        "future_fit": 0.3,
+        "future_volume": 0.2,
+        "risk": 0.2,
+        "balance": 0.03,
+        "handling": 0.02
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18402810824223378,
+        "mean_success_rate": 0.6936628186628186,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4205263853404987,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 300.77298285712976,
+        "p95_decision_ms": 848.7166095001157,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 93.5142195767196
+      },
+      "objective": 0.3316738512783134
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.11043652861111249,
+        "future_fit": 0.43397677017441927,
+        "future_volume": 0.04814770217910787,
+        "risk": 0.2679707711263934,
+        "balance": 0.13601885337169348,
+        "handling": 0.003449374537273541
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 396.6114652988333,
+        "p95_decision_ms": 1342.4385556998914,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 92.14476322751322
+      },
+      "objective": 0.3066716239201785
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.14872399546196338,
+        "future_fit": 0.4704815001822637,
+        "future_volume": 0.1386705466332904,
+        "risk": 0.1950923652237392,
+        "balance": 0.04015689747944145,
+        "handling": 0.0068746950193019
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16212254404708665,
+        "mean_success_rate": 0.6338985088985089,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 280.43110986907647,
+        "p95_decision_ms": 868.519980249698,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 85.71033465608464
+      },
+      "objective": 0.2978154251303043
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.550064371949229,
+        "future_fit": 0.3538617461624703,
+        "future_volume": 0.030809478899902057,
+        "risk": 0.046831938261544574,
+        "balance": 0.01833457908069683,
+        "handling": 9.788564615738793e-05
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4399285965994185,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 262.78419413637266,
+        "p95_decision_ms": 766.2071022499957,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 91.09601534391534
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.2822773103097058,
+        "future_fit": 0.22731058361664336,
+        "future_volume": 0.03873986968361712,
+        "risk": 0.3290927419631289,
+        "balance": 0.0002596468242309478,
+        "handling": 0.12231984760267388
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1866399748784243,
+        "mean_success_rate": 0.7042448292448292,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08102938701515873,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5267860223048327,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 208.13323191308208,
+        "p95_decision_ms": 510.1202955999498,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 89.623592989418
+      },
+      "objective": 0.335591879428906
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.3375225632882851,
+        "future_fit": 0.2531600583246867,
+        "future_volume": 0.12212949463843736,
+        "risk": 0.18304756401926894,
+        "balance": 0.07696680441181035,
+        "handling": 0.027173515317511582
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 148.4156507097063,
+        "p95_decision_ms": 453.19735360008053,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.59375952380951
+      },
+      "objective": 0.3406902236248743
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.4881199255342835,
+        "future_fit": 0.18339551191356337,
+        "future_volume": 0.23873549564654034,
+        "risk": 0.07804352138793821,
+        "balance": 0.00735832354343523,
+        "handling": 0.004347221974239322
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18692531449556712,
+        "mean_success_rate": 0.7015993265993266,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4399285965994185,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 151.775121597834,
+        "p95_decision_ms": 408.62800000004427,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 94.84954616402116
+      },
+      "objective": 0.3370275209949483
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.2358497924267717,
+        "future_fit": 0.41630683452764267,
+        "future_volume": 0.12614684623679107,
+        "risk": 0.1810497487601189,
+        "balance": 0.04011122264077211,
+        "handling": 0.0005355554079036322
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4399285965994185,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 113.06185332953915,
+        "p95_decision_ms": 370.2895360501543,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 92.44489722222222
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.13193146946023593,
+        "future_fit": 0.42661349458054965,
+        "future_volume": 0.08373300023529393,
+        "risk": 0.13899014835355672,
+        "balance": 0.15033355581661476,
+        "handling": 0.06839833155374911
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16501975030042,
+        "mean_success_rate": 0.6418350168350168,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5314949343670161,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 128.05636989411033,
+        "p95_decision_ms": 405.0085420001778,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 86.14773492063493
+      },
+      "objective": 0.3031690948469392
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.21265891714369314,
+        "future_fit": 0.42445267376091184,
+        "future_volume": 0.18051783631448615,
+        "risk": 0.07818384131745496,
+        "balance": 0.042718411537801884,
+        "handling": 0.06146831992565202
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.637290987734787,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 100.3233464431694,
+        "p95_decision_ms": 411.38347199996565,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 87.41177685185183
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 1,
+      "weights": {
+        "space": 0.40658130893938543,
+        "future_fit": 0.14792785814595188,
+        "future_volume": 0.23828563225852464,
+        "risk": 0.07985763670938398,
+        "balance": 0.00635098015344224,
+        "handling": 0.12099658379331182
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18692531449556712,
+        "mean_success_rate": 0.7015993265993266,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.6205241765942535,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 123.00503207605921,
+        "p95_decision_ms": 384.26355480003167,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 89.03438664021162
+      },
+      "objective": 0.3370275209949483
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.3020989942330513,
+        "future_fit": 0.24017784925180374,
+        "future_volume": 0.1601598506991281,
+        "risk": 0.2665401857789781,
+        "balance": 0.0007285215271074999,
+        "handling": 0.03029459850993124
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5467208221878079,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 136.05889204595297,
+        "p95_decision_ms": 480.28411760010397,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 84.91415806878307
+      },
+      "objective": 0.3066716239201785
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.4717870113165106,
+        "future_fit": 0.21124825097638536,
+        "future_volume": 0.08087256588137136,
+        "risk": 0.10834757467535563,
+        "balance": 0.0007937641595826484,
+        "handling": 0.12695083299079446
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18402810824223378,
+        "mean_success_rate": 0.6936628186628186,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5467208221878079,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 85.03404082417187,
+        "p95_decision_ms": 315.29976399997395,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 88.14697711640213
+      },
+      "objective": 0.3316738512783134
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.27707756226606683,
+        "future_fit": 0.21550210215838836,
+        "future_volume": 0.28554550581697763,
+        "risk": 0.08566820659670787,
+        "balance": 0.06493448563045821,
+        "handling": 0.07127213753140105
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.48828288256541275,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 125.02868618391936,
+        "p95_decision_ms": 402.50528359988505,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 86.5467503968254
+      },
+      "objective": 0.3066716239201785
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.22145352257038944,
+        "future_fit": 0.07208005245765015,
+        "future_volume": 0.2634852317932446,
+        "risk": 0.30719664766109545,
+        "balance": 0.0045942744708380775,
+        "handling": 0.13119027104678233
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.173986266295711,
+        "mean_success_rate": 0.6478475228475229,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08102938701515873,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.637290987734787,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 141.44762132942452,
+        "p95_decision_ms": 429.45702039987725,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 81.11102552910053
+      },
+      "objective": 0.3116587095667314
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.2080778965561027,
+        "future_fit": 0.09721482870937193,
+        "future_volume": 0.2152358837270919,
+        "risk": 0.01918016439148665,
+        "balance": 0.2871072414230509,
+        "handling": 0.17318398519289582
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.17159071557386082,
+        "mean_success_rate": 0.6326960076960078,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08102938701515873,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.7239752309809319,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 166.8411938915827,
+        "p95_decision_ms": 540.0691956001078,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 82.48677103174603
+      },
+      "objective": 0.3062328558145782
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.591870683425526,
+        "future_fit": 0.08460215539576119,
+        "future_volume": 0.18451258752796879,
+        "risk": 0.09430165713606967,
+        "balance": 0.04373788836085963,
+        "handling": 0.0009750281538147767
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 92.84370915055396,
+        "p95_decision_ms": 336.70760039994946,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 98.78690052910054
+      },
+      "objective": 0.3406902236248743
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.33039768231044947,
+        "future_fit": 0.414284308982332,
+        "future_volume": 0.06692391416222174,
+        "risk": 0.18422156896361952,
+        "balance": 0.00181236471270331,
+        "handling": 0.0023601608686740633
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.48828288256541275,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 113.27485262366584,
+        "p95_decision_ms": 375.18286239983337,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 93.03232671957672
+      },
+      "objective": 0.3406902236248743
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.16004191967600281,
+        "future_fit": 0.35081254581836946,
+        "future_volume": 0.26497047491111914,
+        "risk": 0.08165832079008865,
+        "balance": 0.00019049346128197518,
+        "handling": 0.14232624534313795
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18692531449556712,
+        "mean_success_rate": 0.7015993265993266,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 108.37461781518513,
+        "p95_decision_ms": 316.8078406501536,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 90.0831164021164
+      },
+      "objective": 0.3370275209949483
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.33085897909624795,
+        "future_fit": 0.309168588181825,
+        "future_volume": 0.12524791058412701,
+        "risk": 0.12216701252021418,
+        "balance": 0.11199025352645872,
+        "handling": 0.0005672560911270655
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16933049454483962,
+        "mean_success_rate": 0.6645622895622895,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4399285965994185,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 307.7386177613707,
+        "p95_decision_ms": 1193.4006946502664,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 94.05262619047619
+      },
+      "objective": 0.31202529363681336
+    },
+    {
+      "round": 2,
+      "weights": {
+        "space": 0.6131970838855153,
+        "future_fit": 0.11933989847308724,
+        "future_volume": 0.11642819860221396,
+        "risk": 0.04738093017693725,
+        "balance": 0.03184821456411012,
+        "handling": 0.07180567429813615
+      },
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5267860223048327,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 264.3428526559048,
+        "p95_decision_ms": 935.532912399867,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 91.49116005291005
+      },
+      "objective": 0.3406902236248743
+    }
+  ],
+  "selected_index": 7,
+  "pareto_indices": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    22
+  ],
+  "sensitivity": [
+    {
+      "weight": "space",
+      "factor": 0.8,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4684852044609665,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 51.06869958069271,
+        "p95_decision_ms": 201.80347780023936,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.10814642857143
+      }
+    },
+    {
+      "weight": "space",
+      "factor": 1.2,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 27.637763634429184,
+        "p95_decision_ms": 68.68317860016752,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.59375952380951
+      }
+    },
+    {
+      "weight": "future_fit",
+      "factor": 0.8,
+      "objective": 0.3460438933415092,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1922379831384243,
+        "mean_success_rate": 0.7201178451178452,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.09782341179515874,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 145.61736288298582,
+        "p95_decision_ms": 615.9235294502195,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.17365476190476
+      }
+    },
+    {
+      "weight": "future_fit",
+      "factor": 1.2,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4684852044609665,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 158.17776643012542,
+        "p95_decision_ms": 765.5190406000648,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.9551642857143
+      }
+    },
+    {
+      "weight": "future_volume",
+      "factor": 0.8,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 30.6860662257917,
+        "p95_decision_ms": 116.71984559998204,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.45903730158732
+      }
+    },
+    {
+      "weight": "future_volume",
+      "factor": 1.2,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4684852044609665,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 32.29338261292381,
+        "p95_decision_ms": 91.03124680013923,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.10814642857143
+      }
+    },
+    {
+      "weight": "risk",
+      "factor": 0.8,
+      "objective": 0.3066716239201785,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.5314949343670161,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 213.76719634483754,
+        "p95_decision_ms": 833.6849285001337,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 89.1593888888889
+      }
+    },
+    {
+      "weight": "risk",
+      "factor": 1.2,
+      "objective": 0.3066716239201785,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.30910651716888576,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 234.0558982413909,
+        "p95_decision_ms": 908.0670761999955,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 88.8107175925926
+      }
+    },
+    {
+      "weight": "balance",
+      "factor": 0.8,
+      "objective": 0.30320835795661427,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.16448517384309358,
+        "mean_success_rate": 0.649050024050024,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.6205241765942535,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 144.22938355815054,
+        "p95_decision_ms": 646.954387499818,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 87.53986838624338
+      }
+    },
+    {
+      "weight": "balance",
+      "factor": 1.2,
+      "objective": 0.3406902236248743,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18934077688509096,
+        "mean_success_rate": 0.7121813371813372,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 143.46937675265744,
+        "p95_decision_ms": 578.0125701999158,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 97.52348346560848
+      }
+    },
+    {
+      "weight": "handling",
+      "factor": 0.8,
+      "objective": 0.3066716239201785,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.1664332882915063,
+        "mean_success_rate": 0.6566257816257816,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4559364816021805,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 29.137527597705994,
+        "p95_decision_ms": 72.02252760016566,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 90.39688055555557
+      }
+    },
+    {
+      "weight": "handling",
+      "factor": 1.2,
+      "objective": 0.33722695766131006,
+      "metrics": {
+        "episodes": 6,
+        "base_groups": 6,
+        "mean_volume_ratio": 0.18739266243667826,
+        "mean_success_rate": 0.7046055796055796,
+        "worst_volume_ratio": 0.03961309523809524,
+        "p10_volume_ratio": 0.08913179303515872,
+        "worst_group_mean_volume_ratio": 0.03961309523809524,
+        "blocked_episode_rate": 0.6666666666666666,
+        "mask_violations": 0,
+        "min_load_margin": 0.4684852044609665,
+        "min_safety": 0.7088888888888898,
+        "mean_decision_ms": 123.26829483695094,
+        "p95_decision_ms": 554.6411005498842,
+        "mean_buffer_moves": 0.0,
+        "mean_handling_seconds_proxy": 95.73300317460318
+      }
+    }
+  ],
+  "tuning_episode_ids": [
+    "d22e0d9f7d6e7bafbc7f",
+    "f630aae4d38ff39a2333",
+    "80afa8abc01ccd746ff0",
+    "a71dad49d73b356ddc00",
+    "7f9983dd24749fd6deb0",
+    "3239fd3ec9bc2d1d1973"
+  ]
+}

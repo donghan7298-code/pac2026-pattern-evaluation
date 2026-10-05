@@ -1,0 +1,36 @@
+{
+  "version": "ahead-pattern-v2",
+  "seed": 20261005,
+  "top_k": 4,
+  "future_draws": 6,
+  "future_depth": 6,
+  "future_candidate_limit": 16,
+  "cvar_fraction": 0.25,
+  "safety": {
+    "min_cog_edge": 0.04,
+    "target_cog_edge": 0.18,
+    "target_load_margin": 0.3
+  },
+  "weights": {
+    "space": 0.3375225632882851,
+    "future_fit": 0.2531600583246867,
+    "future_volume": 0.12212949463843736,
+    "risk": 0.18304756401926894,
+    "balance": 0.07696680441181035,
+    "handling": 0.027173515317511582
+  },
+  "buffer": {
+    "capacity": 2,
+    "move_seconds": 8.0,
+    "occupancy_seconds": 0.2
+  },
+  "time_proxy": {
+    "base_seconds": 5.0,
+    "xy_seconds": 2.0,
+    "z_seconds": 4.0
+  },
+  "ood": {
+    "max_dimension_ratio": 1.0,
+    "max_sensor_sigma_m": 0.03
+  }
+}

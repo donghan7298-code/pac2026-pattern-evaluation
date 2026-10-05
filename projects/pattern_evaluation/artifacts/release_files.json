@@ -1,0 +1,54 @@
+{
+  "benchmark.json": {
+    "bytes": 53908,
+    "sha256": "646e513b82e934571b82b7fbef1610f3030d79ed44a27e50f2da64c66575094d"
+  },
+  "benchmark_episodes.jsonl.gz": {
+    "bytes": 123649,
+    "sha256": "d4e8f7a253f914141d149406378624945de017d9f271672c2fcdc6f9efc1bab2"
+  },
+  "training.json": {
+    "bytes": 10014,
+    "sha256": "10ee390cedde6af7489cee7f1a65be238e2cdabc39ec6186e8c46bd6a29d27c8"
+  },
+  "sample_result.json": {
+    "bytes": 1631,
+    "sha256": "eade6b5e750df8a1f459191e767db78c453417263db19f3e68a7d4bfb044090b"
+  },
+  "learned_config.json": {
+    "bytes": 774,
+    "sha256": "545c0e64ef1d56e8bbd15957d1a62a4601236c47d5c0dbee3030946bf4b7e879"
+  },
+  "train.labels.jsonl.gz": {
+    "bytes": 661318,
+    "sha256": "3b730babc3fae4dbffcf47d705c08b946bbf9f9e3db7290cdb3c1cd6d9c9fbea"
+  },
+  "manifest.json": {
+    "bytes": 1014,
+    "sha256": "06b43852da6333d7f884a553469aaf51bce5d9d5761f25d08d7d2bac1eeb5992"
+  },
+  "ranker.json": {
+    "bytes": 130076,
+    "sha256": "75e1c7cc44737428dd5fdb445beaf0355542dbe008fbfb1c8669efeffb0d43fc"
+  },
+  "evaluation_state.json": {
+    "bytes": 5374,
+    "sha256": "653c9c4969e63e786f8479b62fad5be2017d2986721b22b1b4601b81cc3a5c35"
+  },
+  "validation.labels.jsonl.gz": {
+    "bytes": 124942,
+    "sha256": "73a36959efe87d2e7cfb0094e7b270ec37e81e68951d9c043d63c4e810d5139b"
+  },
+  "sample_observation.json": {
+    "bytes": 5306,
+    "sha256": "870c7718027a015d60cf39e8c3571bfe63d23ac5091dfa58aa55afd3b16f19d2"
+  },
+  "weight_search.json": {
+    "bytes": 33462,
+    "sha256": "b61eedfa5fc1deac0e6e1223ba9e3e63bf1dee3ddc392f0cd38de2687f1b187e"
+  },
+  "sample_episode_trace.json": {
+    "bytes": 13069,
+    "sha256": "17bb57f4dcafb44f2309d1b2703addbe9ff95cf9a36608e885a98b50c4e0e203"
+  }
+}

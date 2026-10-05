@@ -1,0 +1,280 @@
+{
+  "schema_version": "2.0",
+  "request_id": "f4d167b2f0e30cfb1324:0",
+  "pallet": {
+    "length_m": 1.0,
+    "width_m": 0.8,
+    "max_height_m": 0.6,
+    "max_mass_kg": 120.0
+  },
+  "placed_boxes": [],
+  "state_verified": true,
+  "current_box": {
+    "box_id": "568ba46e78b48a0d3798",
+    "sku": "FLAT",
+    "dimensions_m": [
+      0.3856,
+      0.2541,
+      0.0845
+    ],
+    "mass_kg": 2.065,
+    "top_load_capacity_N": 56.85,
+    "allowed_yaw_deg": [
+      0,
+      90
+    ],
+    "measurement_valid": true,
+    "visual_damage_observed": false,
+    "dimension_source": "station_measurement",
+    "mass_source": "station_scale"
+  },
+  "observed_preview": [
+    {
+      "track_id": "ac9d10772da36ce12da2",
+      "sku": "S",
+      "sku_source": "assumed_WMS_identity",
+      "dimensions_m": [
+        0.1698,
+        0.1273,
+        0.085
+      ],
+      "nominal_mass_kg": 0.913,
+      "top_load_capacity_N": 86.54,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "confidence": 0.986,
+      "occluded": false,
+      "dimension_sigma_m": 0.002,
+      "dimension_source": "synthetic_topview_xy_plus_catalog_height",
+      "mass_source": "catalog_not_camera",
+      "belt_distance_m": 0.054,
+      "bbox_normalized": [
+        0.04909,
+        0.15,
+        0.20345,
+        0.30912
+      ],
+      "verified_order_rank": 1
+    },
+    {
+      "track_id": "e1667fa1a255bd7d547e",
+      "sku": "WEAK",
+      "sku_source": "assumed_WMS_identity",
+      "dimensions_m": [
+        0.3432,
+        0.2562,
+        0.17
+      ],
+      "nominal_mass_kg": 1.451,
+      "top_load_capacity_N": 27.09,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "confidence": 0.913,
+      "occluded": false,
+      "dimension_sigma_m": 0.002,
+      "dimension_source": "synthetic_topview_xy_plus_catalog_height",
+      "mass_source": "catalog_not_camera",
+      "belt_distance_m": 0.3949,
+      "bbox_normalized": [
+        0.359,
+        0.15,
+        0.671,
+        0.47025
+      ],
+      "verified_order_rank": 2
+    }
+  ],
+  "unordered_visible_hints": [],
+  "unseen_inventory": {
+    "S": 1,
+    "WEAK": 1,
+    "LARGE": 2,
+    "WIDE": 3,
+    "DENSE": 2,
+    "TALL": 3,
+    "THIN": 1,
+    "LONG": 1,
+    "L": 1,
+    "M": 2,
+    "CUBE": 2
+  },
+  "catalog": {
+    "S": {
+      "sku": "S",
+      "dimensions_m": [
+        0.17,
+        0.1275,
+        0.085
+      ],
+      "mass_kg": 0.913,
+      "top_load_capacity_N": 86.54,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "M": {
+      "sku": "M",
+      "dimensions_m": [
+        0.3,
+        0.2,
+        0.2
+      ],
+      "mass_kg": 3.252,
+      "top_load_capacity_N": 128.95,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "L": {
+      "sku": "L",
+      "dimensions_m": [
+        0.34,
+        0.255,
+        0.2125
+      ],
+      "mass_kg": 6.353,
+      "top_load_capacity_N": 243.45,
+      "allowed_yaw_deg": [
+        0
+      ]
+    },
+    "FLAT": {
+      "sku": "FLAT",
+      "dimensions_m": [
+        0.3825,
+        0.255,
+        0.085
+      ],
+      "mass_kg": 2.058,
+      "top_load_capacity_N": 56.85,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "TALL": {
+      "sku": "TALL",
+      "dimensions_m": [
+        0.17,
+        0.17,
+        0.34
+      ],
+      "mass_kg": 4.379,
+      "top_load_capacity_N": 89.25,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "LONG": {
+      "sku": "LONG",
+      "dimensions_m": [
+        0.6,
+        0.18,
+        0.12
+      ],
+      "mass_kg": 3.668,
+      "top_load_capacity_N": 113.55,
+      "allowed_yaw_deg": [
+        0
+      ]
+    },
+    "WIDE": {
+      "sku": "WIDE",
+      "dimensions_m": [
+        0.5,
+        0.4,
+        0.15
+      ],
+      "mass_kg": 5.238,
+      "top_load_capacity_N": 160.19,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "DENSE": {
+      "sku": "DENSE",
+      "dimensions_m": [
+        0.25,
+        0.2,
+        0.15
+      ],
+      "mass_kg": 8.214,
+      "top_load_capacity_N": 253.79,
+      "allowed_yaw_deg": [
+        0
+      ]
+    },
+    "WEAK": {
+      "sku": "WEAK",
+      "dimensions_m": [
+        0.34,
+        0.255,
+        0.17
+      ],
+      "mass_kg": 1.451,
+      "top_load_capacity_N": 27.09,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "CUBE": {
+      "sku": "CUBE",
+      "dimensions_m": [
+        0.2125,
+        0.2125,
+        0.2125
+      ],
+      "mass_kg": 3.605,
+      "top_load_capacity_N": 194.62,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "THIN": {
+      "sku": "THIN",
+      "dimensions_m": [
+        0.35,
+        0.25,
+        0.06
+      ],
+      "mass_kg": 1.168,
+      "top_load_capacity_N": 37.24,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ]
+    },
+    "LARGE": {
+      "sku": "LARGE",
+      "dimensions_m": [
+        0.66,
+        0.44,
+        0.33
+      ],
+      "mass_kg": 8.344,
+      "top_load_capacity_N": 225.59,
+      "allowed_yaw_deg": [
+        0
+      ]
+    }
+  },
+  "camera": {
+    "fov_length_m": 1.1,
+    "max_tracks": 2,
+    "coverage_complete": true,
+    "ordering_assumption": "single_lane_no_overtaking",
+    "coverage_source": "assumed_temporal_tracker_coverage_flag",
+    "dimension_sigma_m": 0.002
+  },
+  "robot_feasibility": "NOT_CHECKED"
+}

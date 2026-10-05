@@ -1,0 +1,14 @@
+{
+  "version": "ahead-pattern-v2",
+  "seed": 20261005,
+  "top_k": 4,
+  "future_draws": 6,
+  "future_depth": 6,
+  "future_candidate_limit": 16,
+  "cvar_fraction": 0.25,
+  "safety": {"min_cog_edge": 0.04, "target_cog_edge": 0.18, "target_load_margin": 0.3},
+  "weights": {"space": 0.22, "future_fit": 0.4, "future_volume": 0.15, "risk": 0.12, "balance": 0.06, "handling": 0.05},
+  "buffer": {"capacity": 2, "move_seconds": 8.0, "occupancy_seconds": 0.2},
+  "time_proxy": {"base_seconds": 5.0, "xy_seconds": 2.0, "z_seconds": 4.0},
+  "ood": {"max_dimension_ratio": 1.0, "max_sensor_sigma_m": 0.03}
+}

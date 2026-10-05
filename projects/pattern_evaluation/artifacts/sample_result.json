@@ -1,0 +1,69 @@
+{
+  "step": 0,
+  "schema_version": "ahead-action-2.0",
+  "request_id": "f4d167b2f0e30cfb1324:0",
+  "robot_feasibility": "NOT_CHECKED",
+  "requires_robot_validation": true,
+  "weights": {
+    "space": 0.3375225632882851,
+    "future_fit": 0.2531600583246867,
+    "future_volume": 0.12212949463843736,
+    "risk": 0.18304756401926894,
+    "balance": 0.07696680441181035,
+    "handling": 0.027173515317511582
+  },
+  "action": {
+    "type": "PLACE_CURRENT",
+    "box_id": "568ba46e78b48a0d3798",
+    "candidate": {
+      "candidate_id": "0.7459:0:0:90",
+      "position_m": [
+        0.7459,
+        0,
+        0
+      ],
+      "yaw_deg": 90
+    }
+  },
+  "score": 0.4867502539382422,
+  "static": {
+    "space": 0.9895029031056259,
+    "largest_free_patch": 1.0,
+    "fragmentation": 0.0,
+    "height_variation": 0.05248548447187008,
+    "footprint_fit": 1.0,
+    "safety": 1.0,
+    "load_margin": 1.0,
+    "cog_edge": 0.2541,
+    "balance": 0.36805,
+    "handling": 0.32459,
+    "handling_seconds_proxy": 6.4918,
+    "support_ratio": 1.0
+  },
+  "future": {
+    "mean_fit": 0.8333333333333334,
+    "mean_volume": 0.11316171784672736,
+    "cvar_fit": 0.6666666666666667,
+    "block_rate": 0.6666666666666666,
+    "worst_fit": 0.5,
+    "risk": 0.49999999999999994,
+    "scenario_fit": [
+      0.5,
+      0.8333333333333334,
+      0.8333333333333334,
+      1.0,
+      1.0,
+      0.8333333333333334
+    ]
+  },
+  "diagnostics": {
+    "valid_candidates": 8,
+    "detailed_rollouts": 4,
+    "rejected": [],
+    "model_status": "PROVIDED",
+    "ood": false,
+    "future_draws": 6,
+    "future_depth": 6
+  },
+  "decision_ms": 64.50576099996397
+}
