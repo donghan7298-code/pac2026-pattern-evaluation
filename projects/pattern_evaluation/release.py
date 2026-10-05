@@ -69,7 +69,7 @@ def evaluate_release(output, workers=1):
     jobs = [(episode, policy) for episode in episodes for policy in policies]
     frozen = dict(model_sha256=digest(model_path), config_sha256=digest(config_path),
         code_sha256={str(p.relative_to(ROOT.parent.parent)): digest(p) for p in
-            [ROOT/"planner.py", ROOT/"scoring.py", ROOT/"rollout.py", ROOT/"experiment.py",
+            [ROOT/"planner.py", ROOT/"scoring.py", ROOT/"rollout.py", ROOT/"experiment.py", ROOT/"contracts.py", ROOT/"metrics.py",
              ROOT.parent.parent/"pacdata"/"packing.py", ROOT.parent.parent/"pacdata"/"observe.py"]},
         episode_ids=[ep["episode_id"] for ep in episodes], policies=policies)
     state_path = output/"evaluation_state.json"; journal = output/"evaluation_progress.jsonl"

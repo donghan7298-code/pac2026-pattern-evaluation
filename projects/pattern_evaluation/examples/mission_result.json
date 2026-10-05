@@ -1,0 +1,356 @@
+{
+  "schema_version": "ahead-action-2.1",
+  "request_id": "mission-integration-demo",
+  "robot_feasibility": "NOT_CHECKED",
+  "requires_robot_validation": true,
+  "execution_ready": false,
+  "execution_mode": "proposal",
+  "weights": {
+    "space": 0.3375225632882851,
+    "future_fit": 0.2531600583246867,
+    "future_volume": 0.12212949463843736,
+    "risk": 0.18304756401926894,
+    "balance": 0.07696680441181035,
+    "handling": 0.027173515317511582
+  },
+  "action": {
+    "type": "PLACE_CURRENT",
+    "box_id": "CURRENT-03",
+    "candidate": {
+      "candidate_id": "floor",
+      "position_m": [
+        0.7,
+        0,
+        0
+      ],
+      "yaw_deg": 0
+    }
+  },
+  "score": 0.6219436593002539,
+  "static": {
+    "space": 0.979671760740648,
+    "largest_free_patch": 1.0,
+    "fragmentation": 0.0,
+    "height_variation": 0.10164119629675995,
+    "footprint_fit": 1.0,
+    "safety": 1.0,
+    "load_margin": 1.0,
+    "cog_edge": 0.4779411764705882,
+    "balance": 0.6041666666666667,
+    "handling": 0.30833333333333335,
+    "handling_seconds_proxy": 6.166666666666667,
+    "support_ratio": 1.0,
+    "handling_proxy": 0.30833333333333335,
+    "handling_source": "GEOMETRIC_PROXY",
+    "robot_cycle_seconds_estimate": null
+  },
+  "future": {
+    "mean_fit": 1.0,
+    "mean_volume": 0.0,
+    "cvar_fit": 1.0,
+    "block_rate": 0.0,
+    "worst_fit": 1.0,
+    "risk": 0.0,
+    "scenario_fit": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "diagnostics": {
+    "generated_candidates": 3,
+    "valid_candidates": 2,
+    "detailed_rollouts": 2,
+    "rejected": [
+      {
+        "candidate_id": "collision",
+        "stage": "PACKING",
+        "status": "REJECT",
+        "reasons": [
+          "OVERLAP"
+        ]
+      }
+    ],
+    "model_status": "TRAINED_ARTIFACT",
+    "ood": false,
+    "future_draws": 6,
+    "future_depth": 6,
+    "budget_exhausted": false,
+    "ranking": [
+      {
+        "candidate": {
+          "candidate_id": "floor",
+          "position_m": [
+            0.7,
+            0,
+            0
+          ],
+          "yaw_deg": 0
+        },
+        "safety": 1.0,
+        "rank_score": 0.5889945677031558,
+        "detailed_score": 0.6219436593002539,
+        "robot": {
+          "status": "NOT_CHECKED",
+          "reasons": [],
+          "checks": {},
+          "estimated_cycle_seconds": null,
+          "state_token": "4a1d4bf8561d7c2acd2f8fd00222dec756474f3cdb4167ea3050ecf3730dd752",
+          "placement_token": "65f8853c4b621f629fdaad4bf7213503da455f61d063ba125b1126a2d5fa87cf"
+        },
+        "selected": true
+      },
+      {
+        "candidate": {
+          "candidate_id": "on_base",
+          "position_m": [
+            0,
+            0,
+            0.3
+          ],
+          "yaw_deg": 0
+        },
+        "safety": 1.0,
+        "rank_score": 0.583817309079381,
+        "detailed_score": 0.6116600243877283,
+        "robot": {
+          "status": "NOT_CHECKED",
+          "reasons": [],
+          "checks": {},
+          "estimated_cycle_seconds": null,
+          "state_token": "4a1d4bf8561d7c2acd2f8fd00222dec756474f3cdb4167ea3050ecf3730dd752",
+          "placement_token": "a444868d071757bf36317803ffc7800af52c0138b722417367844120f751a6b4"
+        },
+        "selected": false
+      }
+    ],
+    "selection_source": "ROLLOUT"
+  },
+  "score_contributions": {
+    "space": 0.33066132386633107,
+    "future_fit": 0.2531600583246867,
+    "future_volume": 0.0,
+    "risk": -0.0,
+    "balance": 0.04650077766546876,
+    "handling": -0.008378500556232737
+  },
+  "metrics": {
+    "before": {
+      "box_count": 2,
+      "volume_utilization": 0.06250000000000001,
+      "floor_coverage_ratio": 0.2916666666666667,
+      "total_mass_kg": 14.0,
+      "pallet_mass_margin_kg": 86.0,
+      "max_height_m": 0.3,
+      "cog_m": [
+        0.35000000000000003,
+        0.2,
+        0.1285714285714286
+      ],
+      "cog_normalized": [
+        0.2916666666666667,
+        0.25,
+        0.10714285714285716
+      ],
+      "load_distribution": {
+        "method": "UNIFORM_BOTTOM_FOOTPRINT_PROXY",
+        "quadrant_order": [
+          "x0_y0",
+          "x1_y0",
+          "x0_y1",
+          "x1_y1"
+        ],
+        "quadrant_load_N": [
+          117.72,
+          19.62,
+          0.0,
+          0.0
+        ],
+        "boxes": [
+          {
+            "box_id": "BASE-01",
+            "upper_load_N": 0.0,
+            "capacity_N": 200.0,
+            "margin_N": 200.0,
+            "margin_ratio": 1.0
+          },
+          {
+            "box_id": "BASE-02",
+            "upper_load_N": 0.0,
+            "capacity_N": 200.0,
+            "margin_N": 200.0,
+            "margin_ratio": 1.0
+          }
+        ]
+      },
+      "stability": {
+        "method": "RIGID_STATIC_FULL_SINGLE_SUPPORT",
+        "contacts": [
+          {
+            "box_id": "BASE-01",
+            "supporter_id": "FLOOR",
+            "contact_area_m2": 0.16000000000000003,
+            "support_ratio": 1.0,
+            "supported_mass_kg": 8.0,
+            "supported_cog_m": [
+              0.2,
+              0.2,
+              0.15
+            ],
+            "cog_contact_edge_margin_m": 0.2,
+            "rigid_tipping_acceleration_proxy_m_s2": 13.080000000000002
+          },
+          {
+            "box_id": "BASE-02",
+            "supporter_id": "FLOOR",
+            "contact_area_m2": 0.11999999999999998,
+            "support_ratio": 1.0,
+            "supported_mass_kg": 6.0,
+            "supported_cog_m": [
+              0.55,
+              0.20000000000000004,
+              0.10000000000000002
+            ],
+            "cog_contact_edge_margin_m": 0.1499999999999999,
+            "rigid_tipping_acceleration_proxy_m_s2": 14.71499999999999
+          }
+        ],
+        "minimum_support_ratio": 1.0,
+        "minimum_contact_cog_margin_m": 0.1499999999999999,
+        "collapse_probability": null,
+        "dynamic_validation": "NOT_CHECKED"
+      }
+    },
+    "after": {
+      "box_count": 3,
+      "volume_utilization": 0.07812500000000001,
+      "floor_coverage_ratio": 0.3854166666666667,
+      "total_mass_kg": 17.0,
+      "pallet_mass_margin_kg": 83.0,
+      "max_height_m": 0.3,
+      "cog_m": [
+        0.43823529411764706,
+        0.19117647058823528,
+        0.12352941176470589
+      ],
+      "cog_normalized": [
+        0.3651960784313726,
+        0.2389705882352941,
+        0.10294117647058824
+      ],
+      "load_distribution": {
+        "method": "UNIFORM_BOTTOM_FOOTPRINT_PROXY",
+        "quadrant_order": [
+          "x0_y0",
+          "x1_y0",
+          "x0_y1",
+          "x1_y1"
+        ],
+        "quadrant_load_N": [
+          117.72,
+          49.05,
+          0.0,
+          0.0
+        ],
+        "boxes": [
+          {
+            "box_id": "BASE-01",
+            "upper_load_N": 0.0,
+            "capacity_N": 200.0,
+            "margin_N": 200.0,
+            "margin_ratio": 1.0
+          },
+          {
+            "box_id": "BASE-02",
+            "upper_load_N": 0.0,
+            "capacity_N": 200.0,
+            "margin_N": 200.0,
+            "margin_ratio": 1.0
+          },
+          {
+            "box_id": "CURRENT-03",
+            "upper_load_N": 0.0,
+            "capacity_N": 200.0,
+            "margin_N": 200.0,
+            "margin_ratio": 1.0
+          }
+        ]
+      },
+      "stability": {
+        "method": "RIGID_STATIC_FULL_SINGLE_SUPPORT",
+        "contacts": [
+          {
+            "box_id": "BASE-01",
+            "supporter_id": "FLOOR",
+            "contact_area_m2": 0.16000000000000003,
+            "support_ratio": 1.0,
+            "supported_mass_kg": 8.0,
+            "supported_cog_m": [
+              0.2,
+              0.2,
+              0.15
+            ],
+            "cog_contact_edge_margin_m": 0.2,
+            "rigid_tipping_acceleration_proxy_m_s2": 13.080000000000002
+          },
+          {
+            "box_id": "BASE-02",
+            "supporter_id": "FLOOR",
+            "contact_area_m2": 0.11999999999999998,
+            "support_ratio": 1.0,
+            "supported_mass_kg": 6.0,
+            "supported_cog_m": [
+              0.55,
+              0.20000000000000004,
+              0.10000000000000002
+            ],
+            "cog_contact_edge_margin_m": 0.1499999999999999,
+            "rigid_tipping_acceleration_proxy_m_s2": 14.71499999999999
+          },
+          {
+            "box_id": "CURRENT-03",
+            "supporter_id": "FLOOR",
+            "contact_area_m2": 0.09000000000000001,
+            "support_ratio": 1.0,
+            "supported_mass_kg": 3.0,
+            "supported_cog_m": [
+              0.85,
+              0.15,
+              0.10000000000000002
+            ],
+            "cog_contact_edge_margin_m": 0.15,
+            "rigid_tipping_acceleration_proxy_m_s2": 14.714999999999998
+          }
+        ],
+        "minimum_support_ratio": 1.0,
+        "minimum_contact_cog_margin_m": 0.1499999999999999,
+        "collapse_probability": null,
+        "dynamic_validation": "NOT_CHECKED"
+      }
+    },
+    "sampled_expected_volume_utilization": 0.07812500000000001
+  },
+  "robot": {
+    "status": "NOT_CHECKED",
+    "reasons": [],
+    "checks": {},
+    "estimated_cycle_seconds": null,
+    "state_token": "4a1d4bf8561d7c2acd2f8fd00222dec756474f3cdb4167ea3050ecf3730dd752",
+    "placement_token": "65f8853c4b621f629fdaad4bf7213503da455f61d063ba125b1126a2d5fa87cf"
+  },
+  "state_token": "4a1d4bf8561d7c2acd2f8fd00222dec756474f3cdb4167ea3050ecf3730dd752",
+  "decision_ms": 1.9672160001391603,
+  "timing": {
+    "evaluation_ms": 1.9672160001391603,
+    "upstream_pattern_generation_ms": 2.5,
+    "combined_planning_ms": 4.46721600013916,
+    "robot_cycle_seconds_estimate": null,
+    "robot_cycle_seconds_proxy": 6.166666666666667,
+    "budget_ms": null,
+    "budget_exceeded": false,
+    "budget_kind": "SOFT_SAFETY_CHECKS_NEVER_SKIPPED"
+  }
+}

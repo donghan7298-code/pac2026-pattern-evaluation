@@ -1,5 +1,6 @@
 """Label externally generated patterns using the same safety and future evaluator."""
 from .planner import prepare_observation
+from .contracts import state_errors, valid_measurement
 from .rollout import future_metrics, sample_futures
 from .scoring import efficiency_score, feature_vector, priority, valid_candidates
 
@@ -8,6 +9,8 @@ def label_observation(observation, config, candidates=None, base_group="external
     obs = prepare_observation(observation)
     if not obs.get("state_verified") or obs["current_box"] is None:
         raise ValueError("A verified state and a measured current box are required")
+    if state_errors(obs) or not valid_measurement(obs["current_box"]) or obs.get("process_state", "NORMAL") != "NORMAL":
+        raise ValueError("Reconcile state and measurements before Teacher labeling")
     rows, rejected = valid_candidates(obs, config, candidates)
     if not rows: raise ValueError("No valid candidates to label")
     futures = sample_futures(obs, config)

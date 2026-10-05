@@ -27,9 +27,9 @@ def mask(pallet,placed,box,candidate,_context=None):
         return dict(status='HOLD',reasons=['REMEASURE'])
     if len(box.get('dimensions_m',[]))!=3 or any(not isinstance(v,(int,float)) or not math.isfinite(v) or v<=0 for v in box['dimensions_m']) or not math.isfinite(box['mass_kg']) or box['mass_kg']<=0:
         return dict(status='HOLD',reasons=['INVALID_MEASUREMENT'])
-    if len(candidate.get('position_m',[]))!=3 or any(not isinstance(v,(int,float)) or not math.isfinite(v) for v in candidate['position_m']):
+    if len(candidate.get('position_m',[]))!=3 or any(type(v) not in (int,float) or not math.isfinite(v) for v in candidate['position_m']):
         return dict(status='REJECT',reasons=['INVALID_CANDIDATE'])
-    if candidate['yaw_deg'] not in box['allowed_yaw_deg']:
+    if type(candidate.get('yaw_deg')) not in (int,float) or candidate.get('yaw_deg') not in (0,90) or candidate.get('yaw_deg') not in box['allowed_yaw_deg']:
         return dict(status='REJECT',reasons=['ROTATION'])
     d=dims(box,candidate['yaw_deg']);lo=candidate['position_m'];hi=[lo[i]+d[i] for i in range(3)]
     reasons=[]
@@ -66,11 +66,11 @@ def mask(pallet,placed,box,candidate,_context=None):
     return dict(status='REJECT' if reasons else 'ALLOW',reasons=sorted(set(reasons)),support_chain=chain)
 
 
-def generate_candidates(pallet,placed,box,max_candidates=32):
+def generate_candidates(pallet,placed,box,max_candidates=32,include_invalid=False):
     if box is None or not box.get('measurement_valid',True) or box.get('visual_damage_observed'):
         return []
     context=dict(bounded=[(b,*bounds(b)) for b in placed],mass=sum(b['mass_kg'] for b in placed),by_id={b['box_id']:b for b in placed})
-    if box.get('mass_kg') is None or context['mass']+box['mass_kg']>pallet['max_mass_kg']+EPS:return []
+    if box.get('mass_kg') is None or (not include_invalid and context['mass']+box['mass_kg']>pallet['max_mass_kg']+EPS):return []
     candidates=[];seen=set()
     for yaw in box['allowed_yaw_deg']:
         d=dims(box,yaw)
@@ -89,6 +89,7 @@ def generate_candidates(pallet,placed,box,max_candidates=32):
             candidate=dict(candidate_id=':'.join(map(str,key)),position_m=list(key[:3]),yaw_deg=yaw)
             candidates.append(candidate)
     candidates.sort(key=lambda c:(c['position_m'][2],c['position_m'][1],c['position_m'][0],c['yaw_deg']))
+    if include_invalid:return candidates
     # Cap AFTER the mask so early invalid candidates do not erase all valid ones.
     valid=[]
     for candidate in candidates:

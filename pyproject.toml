@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pac2026-pattern-evaluation"
-version = "0.2.1"
+version = "0.3.0"
 description = "Learned pallet candidate ranking, score evaluation and bounded lookahead"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.26,<3"]
@@ -16,4 +16,4 @@ ahead-planner = "projects.pattern_evaluation.__main__:main"
 include = ["pacdata*", "projects", "projects.pattern_evaluation*"]
 
 [tool.setuptools.package-data]
-"projects.pattern_evaluation" = ["config.json", "artifacts/*.json", "artifacts/*.gz", "*.md"]
+"projects.pattern_evaluation" = ["config.json", "artifacts/*.json", "artifacts/*.gz", "examples/*.json", "examples/*.svg", "*.md"]

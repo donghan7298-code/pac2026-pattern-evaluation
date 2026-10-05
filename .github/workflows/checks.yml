@@ -15,3 +15,7 @@ jobs:
           cd "$RUNNER_TEMP"
           ahead-planner plan --input "$GITHUB_WORKSPACE/projects/pattern_evaluation/artifacts/sample_observation.json" > result.json
           python -c 'import json; r=json.load(open("result.json")); assert r["diagnostics"]["model_status"] == "TRAINED_ARTIFACT"; assert r["action"]["type"] == "PLACE_CURRENT"'
+          ahead-planner plan --input "$GITHUB_WORKSPACE/projects/pattern_evaluation/examples/mission_request.json" > mission.json
+          ahead-planner evaluate-sequence --input "$GITHUB_WORKSPACE/projects/pattern_evaluation/examples/sequence_request.json" > sequence.json
+          ahead-planner visualize --input "$GITHUB_WORKSPACE/projects/pattern_evaluation/examples/mission_request.json" --output preview.svg
+          python -c 'import json, xml.etree.ElementTree as ET; r=json.load(open("mission.json")); assert r["schema_version"] == "ahead-action-2.1"; assert not r["execution_ready"]; assert abs(sum(r["score_contributions"].values())-r["score"]) < 1e-10; assert json.load(open("sequence.json"))["packing_valid"]; ET.parse("preview.svg")'

@@ -1,0 +1,87 @@
+{
+  "schema_version": "ahead-scene-1.0",
+  "coordinate_frame": "pallet",
+  "units": "m",
+  "pallet": {
+    "length_m": 1.2,
+    "width_m": 0.8,
+    "max_height_m": 1.2,
+    "max_mass_kg": 100.0
+  },
+  "boxes": [
+    {
+      "box_id": "BASE-01",
+      "sku": "BASE-01",
+      "dimensions_m": [
+        0.4,
+        0.4,
+        0.3
+      ],
+      "mass_kg": 8.0,
+      "top_load_capacity_N": 200.0,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "upper_load_N": 0.0,
+      "supporter_id": "FLOOR",
+      "status": "OBSERVED"
+    },
+    {
+      "box_id": "BASE-02",
+      "sku": "BASE-02",
+      "dimensions_m": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "mass_kg": 6.0,
+      "top_load_capacity_N": 200.0,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "position_m": [
+        0.4,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "upper_load_N": 0.0,
+      "supporter_id": "FLOOR",
+      "status": "OBSERVED"
+    },
+    {
+      "box_id": "CURRENT-03",
+      "sku": "CURRENT-03",
+      "dimensions_m": [
+        0.3,
+        0.3,
+        0.2
+      ],
+      "mass_kg": 3.0,
+      "top_load_capacity_N": 200.0,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "position_m": [
+        0.7,
+        0,
+        0
+      ],
+      "yaw_deg": 0,
+      "upper_load_N": 0.0,
+      "supporter_id": "FLOOR",
+      "status": "PROPOSED"
+    }
+  ],
+  "request_id": "mission-integration-demo",
+  "robot_trajectory": null
+}

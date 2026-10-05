@@ -1,0 +1,128 @@
+{
+  "observation": {
+    "schema_version": "2.0",
+    "request_id": "mission-integration-demo",
+    "state_version": "pallet-1-step-2",
+    "robot_scene_version": "scene-1",
+    "state_verified": true,
+    "coordinate_frame": "pallet",
+    "units": {
+      "length": "m",
+      "mass": "kg",
+      "force": "N"
+    },
+    "pallet": {
+      "length_m": 1.2,
+      "width_m": 0.8,
+      "max_height_m": 1.2,
+      "max_mass_kg": 100.0
+    },
+    "placed_boxes": [
+      {
+        "box_id": "BASE-01",
+        "sku": "BASE-01",
+        "dimensions_m": [
+          0.4,
+          0.4,
+          0.3
+        ],
+        "mass_kg": 8.0,
+        "top_load_capacity_N": 200.0,
+        "allowed_yaw_deg": [
+          0,
+          90
+        ],
+        "position_m": [
+          0,
+          0,
+          0
+        ],
+        "yaw_deg": 0,
+        "upper_load_N": 0.0,
+        "supporter_id": "FLOOR"
+      },
+      {
+        "box_id": "BASE-02",
+        "sku": "BASE-02",
+        "dimensions_m": [
+          0.3,
+          0.4,
+          0.2
+        ],
+        "mass_kg": 6.0,
+        "top_load_capacity_N": 200.0,
+        "allowed_yaw_deg": [
+          0,
+          90
+        ],
+        "position_m": [
+          0.4,
+          0,
+          0
+        ],
+        "yaw_deg": 0,
+        "upper_load_N": 0.0,
+        "supporter_id": "FLOOR"
+      }
+    ],
+    "current_box": {
+      "box_id": "CURRENT-03",
+      "sku": "CURRENT-03",
+      "dimensions_m": [
+        0.3,
+        0.3,
+        0.2
+      ],
+      "mass_kg": 3.0,
+      "top_load_capacity_N": 200.0,
+      "allowed_yaw_deg": [
+        0,
+        90
+      ],
+      "measurement_valid": true,
+      "visual_damage_observed": false
+    },
+    "buffer_boxes": [],
+    "buffer_capacity": 2,
+    "observed_preview": [],
+    "unordered_visible_hints": [],
+    "catalog": {},
+    "unseen_inventory": {},
+    "camera": {
+      "dimension_sigma_m": 0.0
+    },
+    "stream_terminated": true,
+    "pattern_generation_ms": 2.5
+  },
+  "candidates": [
+    {
+      "candidate_id": "floor",
+      "position_m": [
+        0.7,
+        0,
+        0
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "candidate_id": "on_base",
+      "position_m": [
+        0,
+        0,
+        0.3
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "candidate_id": "collision",
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "yaw_deg": 0
+    }
+  ],
+  "mode": "ahead",
+  "execution_mode": "proposal"
+}

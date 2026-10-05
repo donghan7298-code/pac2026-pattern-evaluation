@@ -2,6 +2,8 @@
 
 유효한 배치 후보의 미래 적재 성능을 작은 신경망으로 예측하고, 상위 후보를 실제 Rollout으로 다시 평가하는 AHEAD 구현입니다. 공유 관측 스키마 `2.0`을 사용하며 좌표는 m, 질량은 kg, 상부 하중은 N입니다.
 
+0.3.0은 점수 근거와 물리 단위 지표, 로봇 검사 왕복 계약, 확인된 순서 평가, 2D/등각 3D 표시를 추가합니다. [미션 요구사항 검토](MISSION_REVIEW.md)에 기존 구현과의 차이·검증·남은 범위를 정리했습니다.
+
 ## 실행
 
 저장소 루트에서 Python 3.10 이상으로 실행합니다. GPU와 PyTorch는 필요하지 않습니다.
@@ -57,13 +59,13 @@ OPENBLAS_NUM_THREADS=1 python -m projects.pattern_evaluation.train --quick --out
 # 저장된 교사 표적으로 신경망만 재학습
 OPENBLAS_NUM_THREADS=1 python -m projects.pattern_evaluation.fit ranker --train projects/pattern_evaluation/artifacts/train.labels.jsonl.gz --validation projects/pattern_evaluation/artifacts/validation.labels.jsonl.gz --out projects/pattern_evaluation/runs/retrained
 
-# 기존 체크포인트를 유지하고 검증 중단 지점부터 계속 실행
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m projects.pattern_evaluation.release --workers 4
+# 배포 체크포인트를 유지하고 현재 코드의 별도 전체 검증 실행·재개
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m projects.pattern_evaluation.release --workers 4 --out projects/pattern_evaluation/runs/release-v0.3
 ```
 
 새 결과를 적용하려면 `--model runs/.../ranker.json --config runs/.../learned_config.json`을 사용합니다. 기존 배포 결과를 덮어쓰지 않도록 새 출력 디렉터리를 지정합니다.
 
-`release`는 저장된 학습 모델과 가중치를 그대로 사용합니다. 완료 결과가 있으면 재사용하고, 새 계산은 에피소드마다 기록합니다. 평가 기준·모델·가중치가 달라지면 새 `--out` 경로가 필요합니다. `--labels`를 추가하면 누락된 합성 교사 표적을 재생성합니다. `fit weights`는 재고 그룹과 시나리오에 고르게 표본을 배분하며 시험 데이터가 입력되면 거절합니다.
+`release`는 저장된 학습 모델과 가중치를 그대로 사용합니다. 같은 코드의 완료 결과가 있으면 재사용하고, 새 계산은 에피소드마다 기록합니다. 평가 코드·모델·가중치가 달라지면 새 `--out` 경로가 필요합니다. 기존 `artifacts`의 864회 기록과 0.3.0 결과를 섞지 않습니다. `--labels`를 추가하면 누락된 합성 교사 표적을 재생성합니다. `fit weights`는 재고 그룹과 시나리오에 고르게 표본을 배분하며 시험 데이터가 입력되면 거절합니다.
 
 외부 후보의 교사 표적을 만들고 다시 학습할 수 있습니다. 같은 재고와 그 카메라 변형은 하나의 `base_group`으로 묶어야 합니다.
 

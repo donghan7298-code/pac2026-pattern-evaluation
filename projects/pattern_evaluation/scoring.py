@@ -6,6 +6,7 @@ import numpy as np
 
 from pacdata.packing import apply_placement, bounds, dims, mask
 from pacdata.teacher import FEATURE_NAMES as BASE_NAMES, features as base_features
+from .contracts import robot_assessment
 
 EXTRA_NAMES = ["space_quality", "largest_free_patch", "free_fragmentation", "height_variation",
                "remaining_footprint_fit", "weakest_safety", "load_margin", "balance",
@@ -119,7 +120,7 @@ def feature_vector(obs, candidate, static):
     v = base_features(obs, candidate)
     v += [static["space"], static["largest_free_patch"], static["fragmentation"],
           static["height_variation"], static["footprint_fit"], static["safety"],
-          static["load_margin"], static["balance"], static["handling"],
+          static["load_margin"], static["balance"], static.get("handling_proxy", static["handling"]),
           len(obs.get("buffer_boxes", []))/max(1, obs.get("buffer_capacity", 2)),
           float(obs["current_box"].get("buffer_moves", 0)), static["support_ratio"]]
     return v
@@ -131,30 +132,51 @@ def efficiency_score(static, future, weights):
             weights["balance"]*static["balance"] - weights["handling"]*static["handling"])
 
 
+def score_terms(static, future, weights):
+    future = future or dict(mean_fit=0., mean_volume=0., risk=0.)
+    return dict(space=weights["space"]*static["space"],
+                future_fit=weights["future_fit"]*future["mean_fit"],
+                future_volume=weights["future_volume"]*future["mean_volume"],
+                risk=-weights["risk"]*future["risk"], balance=weights["balance"]*static["balance"],
+                handling=-weights["handling"]*static["handling"])
+
+
 def priority(static, score):
     """Below target, weakest safety precedes efficiency; above target it saturates."""
     safe = static["safety"] >= 1.-1e-8
     return (int(safe), score if safe else static["safety"], score)
 
 
-def valid_candidates(obs, config, supplied=None):
+def valid_candidates(obs, config, supplied=None, execution_mode="proposal"):
     from pacdata.packing import generate_candidates
     p, placed, box = obs["pallet"], obs["placed_boxes"], obs["current_box"]
     # No current-candidate cap before Teacher or Ranking. Finite EP search only.
-    candidates = supplied if supplied is not None else generate_candidates(p, placed, box, 10**9)
+    candidates = supplied if supplied is not None else generate_candidates(p, placed, box, 10**9, include_invalid=True)
     rows, rejected = [], []
-    seen = set()
+    seen = set(); identities = set()
     for index, c in enumerate(candidates):
         c = dict(c, candidate_id=str(c.get("candidate_id", index)))
-        key = (tuple(c.get("position_m", [])), c.get("yaw_deg"))
+        if c["candidate_id"] in identities: raise ValueError("Duplicate candidate_id")
+        identities.add(c["candidate_id"])
+        key = (tuple(c.get("position_m", [])), c.get("yaw_deg"), c.get("grasp_id"), c.get("approach_id"))
         if key in seen: continue
         seen.add(key)
         verdict = mask(p, placed, box, c)
         if verdict["status"] != "ALLOW":
-            rejected.append(dict(candidate_id=c["candidate_id"], **verdict)); continue
+            rejected.append(dict(candidate_id=c["candidate_id"], stage="PACKING", **verdict)); continue
         try:
             static = static_components(obs, c, config)
         except ValueError as error:
-            rejected.append(dict(candidate_id=c["candidate_id"], status="REJECT", reasons=[str(error)])); continue
-        rows.append(dict(candidate=c, static=static))
+            rejected.append(dict(candidate_id=c["candidate_id"], stage="SAFETY", status="REJECT", reasons=[str(error)])); continue
+        robot = robot_assessment(obs, c)
+        if robot["status"] == "REJECT" or (execution_mode == "validated" and robot["status"] != "PASS"):
+            rejected.append(dict(candidate_id=c["candidate_id"], stage="ROBOT", status="REJECT",
+                                 reasons=robot["reasons"] or ["ROBOT_VALIDATION_REQUIRED"], robot=robot)); continue
+        static["handling_proxy"] = static["handling"]
+        static["handling_source"] = "GEOMETRIC_PROXY"
+        static["robot_cycle_seconds_estimate"] = robot["estimated_cycle_seconds"]
+        if robot["estimated_cycle_seconds"] is not None:
+            static["handling"] = min(1., robot["estimated_cycle_seconds"]/20.)
+            static["handling_source"] = "EXTERNAL_ROBOT_ESTIMATE"
+        rows.append(dict(candidate=c, static=static, robot=robot))
     return rows, rejected
