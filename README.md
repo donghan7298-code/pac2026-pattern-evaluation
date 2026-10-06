@@ -4,6 +4,8 @@
 
 0.3.0에서는 Mission 1의 다섯 평가 항목을 대조해 물리 단위 KPI, 로봇 검증·작업시간 연동, 순서 검사, 2D/등각 3D 표시를 보완했습니다. 구현 범위와 남은 검증은 [미션 요구사항 검토](projects/pattern_evaluation/MISSION_REVIEW.md)에 정리했습니다.
 
+폴더·파일별 역할, 두 종류 학습, 실제 샘플의 점수 계산과 공유 설명은 [코드와 동작 해설](projects/pattern_evaluation/WALKTHROUGH_KO.md)을 참조하세요.
+
 ## 실행
 
 Python 3.10 이상을 사용합니다. 프로젝트 루트에서 실행하세요.
